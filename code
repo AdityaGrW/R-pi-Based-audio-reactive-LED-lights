@@ -1,0 +1,37 @@
+import machine
+import neopixel
+import time
+
+# Constants
+NUM_PIXELS = 10
+SOUND_THRESHOLD_MIN = 48
+SOUND_THRESHOLD_MAX = 52
+
+# Pin definitions
+SOUND_PIN = 26
+LED_PIN = 0
+
+# Setup the sound sensor and LEDs
+sound_sensor = machine.ADC(machine.Pin(SOUND_PIN))
+np = neopixel.NeoPixel(machine.Pin(LED_PIN), NUM_PIXELS)
+
+def get_sound_level():
+    return sound_sensor.read_u16() >> 8
+
+def set_leds(brightness):
+    for i in range(NUM_PIXELS):
+        np[i] = (brightness, brightness, brightness)
+    np.write()
+
+def main():
+    while True:
+        sound_level = get_sound_level()
+        if SOUND_THRESHOLD_MIN <= sound_level <= SOUND_THRESHOLD_MAX:
+            brightness = int((sound_level - SOUND_THRESHOLD_MIN) / (SOUND_THRESHOLD_MAX - SOUND_THRESHOLD_MIN) * 255)
+            set_leds(brightness)
+        else:
+            set_leds(0)
+        time.sleep(0.1)
+
+if __name__ == "__main__":
+    main()
