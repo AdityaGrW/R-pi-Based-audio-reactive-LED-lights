@@ -12,7 +12,18 @@ As the name suggest it is a strip of LED lights connected to a Raspberry Pi whic
 Light up your new year parties and impress all your friends with these amazing music reactive multicolor LED lights that response and change their colors on every loud beat. These lights are nothing but simple RGB LED strips connected to R pi - the brain of this project. LED strips mean that you can mount them anywhere in your home and even outdoors. The only condition is that you have to have an audio output device near your lights to feed them with audio signals which can be processed and reacted upon.
 
 ## Required Components
--Raspberry Pi
+### Sound sensor
+The sound sensor is one type of module used to notice the sound. Generally, this module is used to detect the intensity of sound.The applications of this module mainly include switch, security, as well as monitoring. The accuracy of this sensor can be changed for the ease of usage.
+
+
+
+
+### Raspberry Pi
+Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, a brand new microcontroller chip designed by Raspberry Pi in the UK.
+As a microcontroller, the Raspberry Pi Pico can be used in many projects, be it Internet of Things (IoT), Adafruit Neopixel projects, data logging,, projects needing interfacing with cameras, analog sensing (using environment sensors) and more.
+
+
+
 -LED strip
 -Jumper Wires/Connecting Wires
 -Audio - Detector sensor 
