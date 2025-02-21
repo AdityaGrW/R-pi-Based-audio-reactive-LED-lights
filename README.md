@@ -23,10 +23,10 @@ Light up your new year parties and impress all your friends with these amazing m
 As told above, this project uses an arduino for taking the audio input, processing it and then giving an output through it's digital pins to the LED strip controller circuit which then drives the strips. It uses a 12v power supply to power both the strip and arduino. An advantage of this project is that it doesn't 'waste' any audio jacks. It has an input jack which sends the input signal to arduino and an output jack to send the same signal to your speakers or earphones. The entire project can be completed within 2 hours (or 3 hours maximum) and requires just one of the basic parts that can be found easily. 
 
 ## Usage Instructions
-Connection: Connect a USB of 3A 5V to your laptop and the other end to the RP2040 Raspberry Pi Pico.
-Installation of Thonny: Thonny is an integrated development environment for Python. Install it on your laptop.
-Embedding the Code: Open Thonny, connect to the Raspberry Pi Pico, and copy the above Python code into a new file. Save and run the file on the Pico.
-Giving Audio Input: After embedding the code, provide audio input to the sound detector. The LEDs will react to the audio input based on the intensity of the sound.
+-Connection: Connect a USB of 3A 5V to your laptop and the other end to the RP2040 Raspberry Pi Pico.
+-Installation of Thonny: Thonny is an integrated development environment for Python. Install it on your laptop.
+-Embedding the Code: Open Thonny, connect to the Raspberry Pi Pico, and copy the above Python code into a new file. Save and run the file on the Pico.
+-Giving Audio Input: After embedding the code, provide audio input to the sound detector. The LEDs will react to the audio input based on the intensity of the sound.
 
 ## Conclucion
 It   can  be   concluded  from   the  above discussion   that Audio reactive Led lights or Beat sensing lights are a special kind of lights which dances on the intensity of loudness.
